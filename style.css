@@ -1,0 +1,110 @@
+/* CSS EXTERNO */
+/* seletor {
+    propriedade:valor;
+ }
+  */
+:root{
+    --primary: #d42e2e;
+    --primary-dark: #162C41;
+    --secondary: #666666;
+}
+
+
+  body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--primary); /*cor de fundo*/
+}
+
+  div{
+    background-color: white;
+
+    width: 60%; /*largura inicial*/
+    max-width: 340px; /*LARGURA MAXIMA*/
+    margin-top: 100px; /*provisório*/
+     
+    margin-left: auto;
+    margin-right: auto;
+ 
+    padding: 30px;
+    text-align: center; /*espaçamento interno*/
+    border-radius: 10px;
+}
+img{
+    width: 100px;
+    border-radius: 50%;
+    border: 5px solid var(--primary);
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin:0;
+}
+
+h1{
+    color: #1b1e59;
+    font-size: 32px; 
+}
+h2{
+    color: var(--primary);
+    font-size: 20px; 
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+p{
+    font-size: 16px;
+    font-weight: 400px;
+    color: var(--secondary);
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+li{margin-bottom: 7px;
+
+}
+li a{
+    color: #ffffff;
+    background-color: var(--primary); 
+    text-decoration: none;
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 3px; 
+}
+
+li a:hover{
+    background-color: var(--primary-dark);
+}
+
+li a:active {
+    background-color: black;
+}
+
+#copyright{
+    color:162C41;
+}
+
+/*MEDIA QUERY */
+
+@media (min-width: 1280px){
+  #link-app{
+    display:none
+  } 
+}
+/*PARA TELAS DE ATÉ 414 PX */
+@media (max-width: 414px){
+    div{
+        margin-top: 50px; 
+    }
+    img{
+        width: 80px;
+    }
+    h1{
+        font-size: 24px;
+    }
+    h2{
+        font-size: 16px;
+    }
+}
